@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Roboto:wght@100;400;700&display=swap');
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: #FDD8DD;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+h1 {
+  color: #E365C1;
+}
+
+h2 {
+  color: #62BBC1;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+ul > li {
+  display: inline-block;
+  padding: 0px 20px
+}
+
+ul > li > a {
+  font-size: 30px;
+  transition: color 0.3s
+}
+
+ul > li > a:hover {
+  color: black;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 1px rgb(200, 200, 200);
+  text-align: center;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 65px;
+  border: 5px solid #E2B6CF;
+}
+
+.btn-green {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #EC058E;
+  padding: 5px 10px;
+  transition: background-color 0.3s
+}
+
+.btn-green:hover{
+   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
